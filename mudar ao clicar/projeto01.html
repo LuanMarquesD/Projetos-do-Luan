@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro projeto</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Pausar Animação</title>
+    <style>
+        #quadrado {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
 </head>
-<body>  
-    <h1>Olá!</h1>
-    <p id="messagem">Vai ter uma supresa se voce mudar a mensagem debaixo!</p>
-    <button id="clicaaqui">clique para mudar a mensagem!</button>
+<body>
 
+    <div id="quadrado"></div>
+    <button onclick="iniciarAnimacao()">Iniciar Animação</button>
+    <button onclick="pausarAnimacao()">Pausar Animação</button>
 
+    <script>
+        let intervalo;  // Armazena o intervalo
+        let posicao = 0; // Posição inicial
 
-<script src="funcao.js"></script>
-    
+        function iniciarAnimacao() {
+            intervalo = setInterval(moverQuadrado, 10); // Inicia o movimento
+        }
+
+        function moverQuadrado() {
+            if (posicao >= 350) {
+                clearInterval(intervalo); // Para a animação ao chegar no limite
+            } else {
+                posicao++; 
+                document.getElementById("quadrado").style.left = posicao + "px";
+            }
+        }
+
+        function pausarAnimacao() {
+            clearInterval(intervalo); // Pausa a animação
+        }
+    </script>
+
 </body>
 </html>

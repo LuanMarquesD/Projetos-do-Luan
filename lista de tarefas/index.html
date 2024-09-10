@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #task-form {
+            margin-bottom: 20px;
+        }
+        #task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .task-item {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+ 
+
+    </style>
+</head>
+<body>
+   <h1><strong>Lista de Tarefas</strong></h1>
+
+   <form id="task-form">
+    <input type="text" id="task-input" placeholder="Adicione uma nova tarefa..." required>
+    <button id="EnviarSubmit">Adicionar nova Tarefa</button>
+    <ul id="task-list"></ul>
+    <script src="tarefa.js"></script>
+
+   </form>
+</body>
+</html>

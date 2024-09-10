@@ -1,0 +1,94 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+.titulo{
+    margin-left: 830px;
+    margin-top: 50px;
+    
+}
+.quadrado{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: solid black;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: 40px;
+    
+}
+.playGame{
+    margin-left: 750px;
+    margin-top: 1px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: blue;
+}
+.restartGame{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.cobrinha {
+    width: 7px;                /* Largura do elemento */
+    height: 7px;               /* Altura do elemento */
+    background-color: blue;   /* Cor do elemento */
+    position: absolute;        /* Usado para posicionamento absoluto */
+    top: 300px;                  /* Move o topo para 50% do contêiner pai */
+    left: 300px;                 /* Move a esquerda para 50% do contêiner pai */
+    
+    
+}
+.pontos{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.NickName{
+    width: 200px;
+    height: 200px;
+    margin-right: 1000px;
+    margin-left: 100px;
+    background-color: grey;
+    
+    
+}
+
+.recebeu {
+
+    margin-left: 680px;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+
+.score{
+
+margin-top: 90px;
+margin-left: 900px;
+
+}
+
+.score{
+
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+    
